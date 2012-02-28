@@ -2,7 +2,7 @@ dojo.provide('client.capabilities.PageCompleted');
 
 mulberry.capability('PageCompleted', {
   requirements : {
-    todoList : 'custom.TodoList'
+    todoList : 'TodoList'
   },
 
   connects : [

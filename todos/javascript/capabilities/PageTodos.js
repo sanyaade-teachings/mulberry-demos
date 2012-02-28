@@ -1,14 +1,15 @@
 dojo.provide('client.capabilities.PageTodos');
 
+console.log('mulberry', mulberry);
 mulberry.capability('PageTodos', {
   /*
    * The capability expects the following components to be present in order for
    * the capability to work.
    */
   requirements : {
-    todoList : 'custom.TodoList',
-    todoForm : 'custom.TodoForm',
-    todoTools : 'custom.TodoTools'
+    todoList : 'TodoList',
+    todoForm : 'TodoForm',
+    todoTools : 'TodoTools'
   },
 
   /*

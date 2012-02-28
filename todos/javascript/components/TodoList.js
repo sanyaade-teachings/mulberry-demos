@@ -2,7 +2,7 @@ dojo.provide('client.components.TodoList');
 
 mulberry.component('TodoList', {
   componentTemplate : dojo.cache('client.components', 'TodoList/TodoList.haml'),
-  itemTemplate : toura.haml(dojo.cache('client.components', 'TodoList/Item.haml')),
+  itemTemplate : mulberry.haml(dojo.cache('client.components', 'TodoList/Item.haml')),
 
   init : function() {
     this.connect(this.domNode, 'click', '_handleClick');
