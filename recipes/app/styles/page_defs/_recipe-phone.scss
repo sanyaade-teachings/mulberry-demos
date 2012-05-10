@@ -1,0 +1,9 @@
+.page.recipe-phone {
+  .screen.index {
+    @include flex-row-container;
+
+    .region.page-nav {
+      @include fixed-flex-region;
+    }
+  }
+}
