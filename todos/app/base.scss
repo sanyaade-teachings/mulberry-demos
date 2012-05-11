@@ -1,9 +1,19 @@
-@import 'settings';
-@import 'helpers/mixins';
-@import 'helpers/forms';
+@import 'styles/settings';
+// The core framework. If you remove this, things will break.
+@import 'mulberry';
 
-@import 'splash';
-@import 'screen';
+// Theme mixins. You can remove this import if you're not using them.
+@import 'themes/toura';
+
+// Put your global and page_def styles here.
+@import 'styles/base';
+@import 'styles/delete-button';
+@import 'toura';
+@import 'styles/custom';
+@import 'components/TodoForm/todo-form';
+@import 'components/TodoList/todo-list';
+@import 'components/TodoTools/todo-tools';
+@import 'components/NavBar/nav-bar';
 
 body {
   color: $text-color;
@@ -23,10 +33,7 @@ body {
   }
 }
 
-@import '../../javascript/components/TodoForm/todo-form';
-@import '../../javascript/components/TodoList/todo-list';
-@import '../../javascript/components/TodoTools/todo-tools';
-@import '../../javascript/components/NavBar/nav-bar';
+
 
 .page.todos {
   .screen.index {

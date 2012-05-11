@@ -1,6 +1,5 @@
 dojo.provide('client.capabilities.PageTodos');
 
-console.log('mulberry', mulberry);
 mulberry.capability('PageTodos', {
   /*
    * The capability expects the following components to be present in order for
