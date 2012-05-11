@@ -1,0 +1,21 @@
+@import 'styles/settings';
+// The core framework. If you remove this, things will break.
+@import 'mulberry';
+
+// Theme mixins. You can remove this import if you're not using them.
+@import 'themes/toura';
+
+// Put your global and page_def styles here.
+//@import 'styles/base';
+
+@import 'toura';
+@import 'styles/delete-button';
+@import 'components/Accelerometer/accelerometer';
+@import 'components/Browser/browser';
+@import 'components/Camera/camera';
+@import 'components/Connection/connection';
+@import 'components/Device/device';
+@import 'components/Geolocation/geolocation';
+@import 'components/Notification/notification';
+
+
