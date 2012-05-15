@@ -18,16 +18,16 @@ mulberry.pageDef('todos', {
       regions : [
         {
           className : 'todo-form-container',
-          components : [ 'TodoForm' ]
+          components : [ 'custom.TodoForm' ]
         },
         {
           className : 'todo-list-container',
           scrollable : true,
-          components : [ 'TodoList' ]
+          components : [ 'custom.TodoList' ]
         },
         {
           className : 'todo-tools-container',
-          components : [ 'TodoTools' ]
+          components : [ 'custom.TodoTools' ]
         }
       ]
     }
@@ -42,13 +42,13 @@ mulberry.pageDef('completed', {
       regions : [
         {
           className : 'nav-bar-container',
-          components : [ 'NavBar' ]
+          components : [ 'custom.NavBar' ]
         },
         {
           className : 'todo-list-container',
           scrollable : true,
           components : [
-            'TodoList'
+            'custom.TodoList'
           ]
         }
       ]
