@@ -1,0 +1,6 @@
+.component.photo-view
+  :each c in node.children
+    %li
+      %a{ href : c.url }
+        .image{ dojoType: 'mulberry.ui.BackgroundImage', imageUrl: c.featuredImage.small.url, loadOnInit: true }
+        %span =c.name

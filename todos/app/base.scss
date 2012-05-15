@@ -1,0 +1,60 @@
+@import 'styles/settings';
+// The core framework. If you remove this, things will break.
+@import 'mulberry';
+
+// Theme mixins. You can remove this import if you're not using them.
+@import 'themes/toura';
+
+// Put your global and page_def styles here.
+
+@import 'toura';
+@import 'styles/viewport';
+@import 'components/TodoForm/todo-form';
+@import 'components/TodoList/todo-list';
+@import 'components/TodoTools/todo-tools';
+@import 'components/NavBar/nav-bar';
+
+body {
+  color: $text-color;
+  font-family: $base-font;
+}
+
+.page {
+  background-color: $app-background-color;
+}
+
+// KLUDGE: workaround for bug in ios where :last-child styles in captions are
+// not applied until after scroller moves, which changes the height and breaks
+// the scroller.
+.component.body-text:not(.image-caption) {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+
+.page.todos {
+  .screen.index {
+    @include flex-row-container;
+
+    .region.todo-list-container {
+      @include flex-region;
+    }
+
+    .region.todo-form-container,
+    .region.todo-tools-container {
+      @include fixed-flex-region;
+    }
+  }
+}
+
+.page.completed {
+  .screen.index {
+    @include flex-row-container;
+
+    .region.nav-bar-container {
+      @include fixed-flex-region;
+    }
+  }
+}

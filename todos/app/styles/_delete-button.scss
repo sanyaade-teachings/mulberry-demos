@@ -1,0 +1,9 @@
+.delete.button {
+  width: 30px;
+  background: url(../css/resources/icons/btn-delete.png) center center no-repeat transparent;
+  -webkit-background-size: contain;
+
+  &.deleting {
+    background-image: url(../css/resources/icons/btn-delete-confirm.png);
+  }
+}
