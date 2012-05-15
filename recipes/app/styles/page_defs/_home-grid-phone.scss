@@ -1,9 +1,13 @@
 .page.home-grid-phone {
-  .screen.index {
+  .region.top-container {
     @include flex-row-container;
 
-    .region.page-nav {
+    .region.home-header-container {
       @include fixed-flex-region;
     }
+  }
+
+  .region.app-nav-container {
+    @include fixed-flex-region;
   }
 }

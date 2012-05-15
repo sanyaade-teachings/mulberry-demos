@@ -3,15 +3,15 @@
  * any dependencies you introduce via `mulberry create component`.
  */
 
-dojo.subscribe('/app/deviceready', function() {
+/*dojo.subscribe('/app/deviceready', function() {
   mulberry.app.Config.set('app', { name : 'MyApp' });
   mulberry.registerComponentNamespace(client.components);
 
   setTimeout(function() {
     dojo.publish('/app/ready');
   }, 10);
-});
-
+});*/
+dojo.require('toura.base');
 dojo.require('client.routes');
 dojo.require('client.capabilities.PageTodos');
 dojo.require('client.capabilities.PageCompleted');

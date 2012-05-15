@@ -6,10 +6,10 @@
 @import 'themes/toura';
 
 // Put your global and page_def styles here.
-@import 'styles/base';
-@import 'styles/delete-button';
+
 @import 'toura';
 @import 'styles/custom';
+@import 'styles/viewport';
 @import 'components/TodoForm/todo-form';
 @import 'components/TodoList/todo-list';
 @import 'components/TodoTools/todo-tools';
